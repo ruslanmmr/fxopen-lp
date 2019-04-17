@@ -1,0 +1,19 @@
+doctype html
+html(lang="ru")
+  head
+    include blocks/head
+    link(rel="stylesheet" href="styles/common.min.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+  body
+    .wrapper
+      .wrapper__background
+        .element-with-video-bg.jquery-background-video-wrapper
+        main.main
+          include blocks/home
+          include blocks/news-feed
+          include blocks/relevance
+          include blocks/trades
+        include blocks/footer
+
+    script(src="js/libs.min.js")
+    script(src="js/common.min.js")

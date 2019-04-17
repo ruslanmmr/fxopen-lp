@@ -1,0 +1,164 @@
+footer.footer
+  .container
+    .footer__container
+      .footer-form
+        .footer-form__container
+          section.g-main
+            #ajaxMainLoader(style='display: none; text-align: center')
+              script(type='text/javascript').
+                //<![CDATA[
+                window.__mirage2 = {petok:"6d24b1c650f30636edaa1ca3cfdd3bebfacd16bb-1555516930-1800"};
+                //]]>
+              script(type='text/javascript', src='https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js')
+              img(data-cfsrc='https://my.fxopen.com/Content/Themes/FXOpen/Images/ltr/ajax-loader-main.gif', alt='', src='https://my.fxopen.com/Content/Themes/FXOpen/Images/ltr/ajax-loader-main.gif')
+            script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/kendo/kendo.all.min.js')
+            script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/kendo/kendo.aspnetmvc.min.js')
+            #registrationForm
+              script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/social.networks.popup.js')
+              script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/social.networks.popup.specs.js')
+              script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.modules/registration.user/portal.module.registration.user.agreement.js')
+              form#form0.b-customForm(action='', data-ajax='true', data-ajax-loading='#ajaxMainLoader', data-ajax-method='POST', data-ajax-mode='replace', data-ajax-update='#registrationForm', method='post', novalidate='novalidate', autocomplete='off')
+                input(autocomplete='nope', name='autocomplete-off', type='text', style='display:none;')
+                .b-infobox.b-infobox_size_normal
+                  .infobox__header
+                    h2 Регистрация eWallet
+                  .infobox__content
+                    .customForm__line
+                      .customForm__field
+                        .customForm__line
+                          .customForm__field._center
+                            label.customForm__name.customForm__name_center
+                              | Регистрация через:
+                        #socialLoginForm
+                          div(align='center')
+                            a#facebook-social-button.facebook-button(href='/ru/SocialNetwork/OAuth/Facebook/?returnUrl=', title='Facebook') Facebook
+                            a#vkontakte-social-button.vkontakte-button(href='/ru/SocialNetwork/OAuth/Vkontakte/?returnUrl=', title='ВКонтакте') ВКонтакте
+                        .customForm__line
+                          .customForm__separator
+                          .customForm__field._center
+                            label.customForm__name.customForm__name_center Или заполнив форму ниже:
+                    script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.modules/registration.user/portal.module.registration.user.firststep.js')
+                    #emailConfirmationContainer
+                      script(type='text/javascript').
+                        var sendEmailUrl = '/ru/Email/SendRegistrationCode/';
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/intlTelInput.min.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/utils.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.user/identity/portal.user.identity.email.confirmation.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/designate.default.submit.button.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.plugin.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.countdown.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.timer.js')
+                      .customForm__line
+                        .customForm__field
+                          .customForm__title
+                            label.customForm__name(for='Address') E-mail:
+                          .customForm__cell
+                            input#Email_Address.customForm__inp.k-textbox.input-validation-error(data-val='true', data-val-email='Неверный e-mail.', data-val-required='Поле «E-mail» обязательно для заполнения.', maxlength='48', name='Email.Address', type='text', value='')
+                      input#Email_IsCodeContainerVisible(data-val='true', data-val-required="'IsCodeContainerVisible' обязано быть непустым.", name='Email.IsCodeContainerVisible', type='hidden', value='False')
+                      .customForm__line
+                        .customForm__field
+                          .customForm__cell
+                            #emailAddressValidationSummary.customForm__errors
+                    #smsConfirmationContainer
+                      script(type='text/javascript').
+                        var sendSmsUrl = '/ru/Sms/SendRegistrationCode/';
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/intlTelInput.min.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/utils.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.user/identity/portal.user.identity.sms.confirmation.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/designate.default.submit.button.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.plugin.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.countdown.js')
+                      script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.timer.js')
+                      .customForm__line
+                        .customForm__field
+                          .customForm__title
+                            label.customForm__name(for='MobilePhoneNumber') Номер мобильного телефона:
+                          .customForm__cell
+                            link(href='https://my.fxopen.com/Content/Themes/Default/css/ltr/intlTelInput.css', rel='stylesheet')
+                            script(src='https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.phone.js')
+                            style.
+                              .iti-flag {
+                              background-image: url(/Content/Themes/Default/Images/ltr/intl-flags.png);
+                              }
+                              .intl-tel-input {
+                              width: 100%;
+                              }
+                            .intl-tel-input.allow-dropdown.separate-dial-code.iti-sdc-4
+                              .flag-container
+                              input#Sms_MobilePhoneNumberControl.customForm__inp.k-textbox.progressBarElement(type='tel', autocomplete='off', placeholder='39 123 4567')
+                            input#Sms_MobilePhoneNumber(data-contact-method='Phone', data-url='', name='Sms.MobilePhoneNumber', style='visibility:hidden; position:absolute;', type='text', value='')
+                            input#Sms_MobilePhoneNumberControlInitialized(name='Sms_MobilePhoneNumberControlInitialized', type='hidden', value='true')
+                            script.
+                              $(document).ready(function () {
+                              initializePhoneControl("Sms_MobilePhoneNumber", "", "",
+                              '[null]', '["US"]', '[]', 'https://ipinfo.io?token=fd300290e7c07c');
+                              });
+                      input#Sms_IsCodeContainerVisible(data-val='true', data-val-required="'IsCodeContainerVisible' обязано быть непустым.", name='Sms.IsCodeContainerVisible', type='hidden', value='False')
+                      .customForm__line
+                        .customForm__field
+                          .customForm__cell
+                            .customForm__errors
+                              span.field-validation-valid(data-valmsg-for='Sms.MobilePhoneNumber', data-valmsg-replace='true')
+                    .customForm__separator
+                    input#CaptchaEnabled(data-val='true', data-val-required="'CaptchaEnabled' обязано быть непустым.", name='CaptchaEnabled', type='hidden', value='True')
+                    .customForm__line
+                      .customForm__field
+                        .customForm__title
+                          label.customForm__name(for='CaptchaCode') Код защиты:
+                        .customForm__cell
+                          input#CaptchaCode.k-textbox.customForm__inp.valid(autocomplete='off', maxlength='6', name='CaptchaCode', type='text', value='')
+                    .customForm__line
+                      .customForm__field
+                        .customForm__cell(style='text-align: center;')
+                          .customForm__captcha
+                            img(alt='Captcha image', src='data:image/jpeg;base64,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')
+                    .customForm__line.customForm__line_size_big
+                      .customForm__field
+                        .customForm__title  
+                        .customForm__cell
+                          label.customForm__wrap
+                            input#IsTermsConfirmed.customForm__cbx.agreementRequest.valid(data-text='You need to accept FXOpen\'s "Client Agreement" and "eWallet Terms of Use".', data-val='true', data-val-required="'IsTermsConfirmed' обязано быть непустым.", name='IsTermsConfirmed', type='checkbox', value='true')
+                            span.customForm__cbxCustomize
+                            input(name='IsTermsConfirmed', type='hidden', value='false')
+                            span.customForm__label
+                              | Я принимаю условия 
+                              a(href='https://my.fxopen.com/Settings/AccountDocuments/', target='_blank') Клиентского Соглашения
+                              |  и 
+                              a(href='https://my.fxopen.com/Download?name=eWallet_Agreement_EN.pdf', target='_blank') Договора об использовании электронного кошелька FXOpen eWallet
+                              | .
+                    .customForm__line.customForm__line_size_big
+                      .customForm__field
+                        .customForm__title  
+                        .customForm__cell
+                          label.customForm__wrap
+                            input#IsPrivacyConfirmed.customForm__cbx.agreementRequest.valid(data-text='Необходимо подтвердить согласие на обработку ваших персональных данных.', data-val='true', data-val-required="'IsPrivacyConfirmed' обязано быть непустым.", name='IsPrivacyConfirmed', type='checkbox', value='true')
+                            span.customForm__cbxCustomize
+                            input(name='IsPrivacyConfirmed', type='hidden', value='false')
+                            span.customForm__label
+                              | Я соглашаюсь на обработку моих персональных данных согласно 
+                              a(href='https://www.fxopen.ru/ru/konfidentsialnost', target='_blank') Политике конфиденциальности
+                              |  компании FXOpen.
+                    .customForm__line
+                      .customForm__field
+                        .customForm__cell
+                          .customForm__errors
+                            .validation-summary-errors(data-valmsg-summary='true')
+                              
+                    .customForm__line
+                      .customForm__field
+                        .customForm__cell(style='text-align: center;')
+                          button.b-btn.customForm__btn._color--second(type='submit', onclick='return onClick_submitButton()')
+                            | Далее
+                    .customForm__line
+                      .customForm__field
+                        .customForm__cell(style='text-align: center;')
+                          a.pText2.pText2-t3.pLink(onclick="openNewWindow('https://fxopen.support/visitor/index.php?/Default/LiveChat/Chat/Request/_sessionID=/_promptType=chat/_proactive=0/_filterDepartmentID=/_languageID=1/_randomNumber=' + Math.random(), 600, 680);return false;", href='###') Вопросы? Online чат! 
+                input(name='__RequestVerificationToken', type='hidden', value='nJTTcMRF-UG0QY-P0JuD_hhZBks-WhUehPromn5lqfwNolTyLX9hmODGZQOirP0f5Yu-SkZSWJdy8gq5V1xlmaDz2l81')
+              script.
+                $(document).ready(function () {try {_gaq.push(['_trackPageview', 'registration']);} catch (e) {console.log(e);}});
+
+      .logo.footer__logo
+          a(href="#").logo__link
+            img(src="img/logos/logo1.svg", alt="").logo__image
+      p.footer__text Трейдинг на финансовых рынках связан с существенными рисками, включая риск полной потери средств и другие затраты. Клиент должен самостоятельно и осознанно решить,<br> подходит ли ему этот вид деятельности, учитывая свои финансовые возможности, опыт в сфере инвестиций, склонность к риску и другие факторы. Любая информация, размещенная<br> на данном сайте, является рекомендацией общего характера.
+      span.copy © Все права защищены! 2018г.

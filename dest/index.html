@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>document</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="styles/libs.min.css">
+    <link rel="stylesheet" href="styles/common.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrapper__background">
+        <div class="element-with-video-bg jquery-background-video-wrapper"></div>
+        <main class="main">
+          <div class="home">
+            <div class="home__background">
+              <!--фильтр если нужен, если нет - просто удалить--><span class="home__filter"></span>
+              <!---->
+              <div class="home__poster lazy" data-src="img/backgrounds/video-poster.jpeg"></div>
+              <div class="element-with-video-bg jquery-background-video-wrapper"></div>
+            </div>
+            <div class="container">
+              <div class="home__container">
+                <div class="home__text">
+                  <h1 class="home__title">Торговать нефтью легко<span class="italic">!</span></h1><span class="home__subtitle">Зарабатывать на торговле энергоносителях может каждый</span>
+                </div>
+                <div class="home-form">
+                  <div class="home-form__head">
+                    <div class="logo"><a class="logo__link" href="#"><img class="logo__image" src="img/logos/logo1.svg" alt=""></a></div>
+                  </div>
+                  <form class="home-form__form" action="">
+                    <div class="home-form__container">
+                      <div class="home-form__group"><span class="home-form__label">Имя</span>
+                        <input class="input home-form__input" type="text" required>
+                      </div>
+                      <div class="home-form__group"><span class="home-form__label">Телефон</span>
+                        <input class="input home-form__input" type="text" required>
+                      </div>
+                      <div class="home-form__group"><span class="home-form__label">E-mail</span>
+                        <input class="input home-form__input" type="email" required>
+                      </div>
+                      <div class="home-form__group">
+                        <div class="checkbox">
+                          <input class="checkbox__input" type="checkbox" id="personalData">
+                          <label class="checkbox__label" for="personalData">Я соглашаюсь на обработку моих персональных данных согласно <a href='#'>Политике конфиденциальности</a> компании FXOpen.</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="home-form__container">
+                      <button class="button button_style1" type="submit">15 000$ на демо-счет</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="news-feed">
+            <div class="news-feed__container">
+              <ul class="news-feed__list">
+                <li class="news-feed__item"><a class="news-feed__link" href="#"><span>ИА REGNUM</span>Рост рынка нефти тормозят “слабые данные” экономики США</a></li>
+                <li class="news-feed__item"><a class="news-feed__link" href="#"><span>SRN</span>Экспортная пошлина на нефть в России с 1 марта выростет на $10,5 – до 91,2 за тонну </a></li>
+                <li class="news-feed__item"><a class="news-feed__link" href="#"><span>BBC Русская служба</span>Экспортная пошлина на нефть в России с 1 марта выростет на $10,5 – до 91,2 за тонну </a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="relevance">
+            <div class="container">
+              <div class="relevance__container">
+                <div class="relevance__content">
+                  <div class="relevance__head">
+                    <h4 class="title">Почему торговать нефтью актуально?</h4>
+                  </div>
+                  <div class="relevance__slider">
+                    <div class="relevance-slider">
+                      <div class="relevance-slide">
+                        <div class="relevance-slide__container">
+                          <p class="relevance__text">Цены на нефть меняются очень быстро. На цены могут влиять политические события, колебания спроса и предложения и даже погодные условия в станах производящих и экспортирующих нефть. Инвесторы во всем мире, пользуясь волатильностью рынка, зарабатывают на росте и падении цены на нефть</p>
+                        </div>
+                      </div>
+                      <div class="relevance-slide">
+                        <div class="relevance-slide__container">
+                          <p class="relevance__text">Цены на нефть меняются очень быстро. На цены могут влиять политические события, колебания спроса и предложения и даже погодные условия в станах производящих и экспортирующих нефть. Инвесторы во всем мире, пользуясь волатильностью рынка, зарабатывают на росте и падении цены на нефть</p>
+                        </div>
+                      </div>
+                      <div class="relevance-slide">
+                        <div class="relevance-slide__container">
+                          <p class="relevance__text">Цены на нефть меняются очень быстро. На цены могут влиять политические события, колебания спроса и предложения и даже погодные условия в станах производящих и экспортирующих нефть. Инвесторы во всем мире, пользуясь волатильностью рынка, зарабатывают на росте и падении цены на нефть</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="trades">
+            <div class="container">
+              <h4 class="title trades__title">Случайные сделки с нефтью от клиентов FXopen</h4>
+              <div class="trades__container">
+                <div class="trades__chart"></div>
+              </div>
+              <div class="trades-stock">
+                <h4 class="title">Акция +200% на все пополнения<span class="italic">!</span></h4>
+                <div class="trades-stock__container">
+                  <div class="trades-stock-block">
+                    <div class="trades-stock-block__container">
+                      <div class="trades-stock-block__content"><img class="trades-stock-block__icon" src="img/icons/icon1.png" alt=""><span class="trades-stock-block__text">Участвуют все клиенты FXOpen</span></div>
+                    </div>
+                  </div>
+                  <div class="trades-stock-block">
+                    <div class="trades-stock-block__container">
+                      <div class="trades-stock-block__content"><img class="trades-stock-block__icon" src="img/icons/icon2.png" alt=""><span class="trades-stock-block__text">Максимальный размер бонуса не ограничен</span></div>
+                    </div>
+                  </div>
+                  <div class="trades-stock-block">
+                    <div class="trades-stock-block__container">
+                      <div class="trades-stock-block__content"><img class="trades-stock-block__icon" src="img/icons/icon3.png" alt=""><span class="trades-stock-block__text">Учитывается каждое пополнение</span></div>
+                    </div>
+                  </div>
+                  <div class="trades-stock-block">
+                    <div class="trades-stock-block__container">
+                      <div class="trades-stock-block__content"><img class="trades-stock-block__icon" src="img/icons/icon4.png" alt=""><span class="trades-stock-block__text">Эскстра-бонусы на индивидуальных условиях</span></div>
+                    </div>
+                  </div>
+                </div><a class="trades-stock__info" href="#">Информация о сроках, правилах проведения акции доступна в Правилах </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__container">
+              <div class="footer-form">
+                <div class="footer-form__container">
+                  <section class="g-main">
+                    <div id="ajaxMainLoader" style="display: none; text-align: center">
+                      <script type="text/javascript">
+                        //<![CDATA[
+                        window.__mirage2 = {petok:"6d24b1c650f30636edaa1ca3cfdd3bebfacd16bb-1555516930-1800"};
+                        //]]>
+                      </script>
+                      <script type="text/javascript" src="https://ajax.cloudflare.com/cdn-cgi/scripts/04b3eb47/cloudflare-static/mirage2.min.js"></script><img data-cfsrc="https://my.fxopen.com/Content/Themes/FXOpen/Images/ltr/ajax-loader-main.gif" alt="" src="https://my.fxopen.com/Content/Themes/FXOpen/Images/ltr/ajax-loader-main.gif">
+                    </div>
+                    <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/kendo/kendo.all.min.js"></script>
+                    <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/kendo/kendo.aspnetmvc.min.js"></script>
+                    <div id="registrationForm">
+                      <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/social.networks.popup.js"></script>
+                      <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/social.networks.popup.specs.js"></script>
+                      <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.modules/registration.user/portal.module.registration.user.agreement.js"></script>
+                      <form class="b-customForm" id="form0" action="" data-ajax="true" data-ajax-loading="#ajaxMainLoader" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-update="#registrationForm" method="post" novalidate="novalidate" autocomplete="off">
+                        <input autocomplete="nope" name="autocomplete-off" type="text" style="display:none;">
+                        <div class="b-infobox b-infobox_size_normal">
+                          <div class="infobox__header">
+                            <h2>Регистрация eWallet</h2>
+                          </div>
+                          <div class="infobox__content">
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__line">
+                                  <div class="customForm__field _center">
+                                    <label class="customForm__name customForm__name_center">Регистрация через:</label>
+                                  </div>
+                                </div>
+                                <div id="socialLoginForm">
+                                  <div align="center"><a class="facebook-button" id="facebook-social-button" href="/ru/SocialNetwork/OAuth/Facebook/?returnUrl=" title="Facebook">Facebook</a><a class="vkontakte-button" id="vkontakte-social-button" href="/ru/SocialNetwork/OAuth/Vkontakte/?returnUrl=" title="ВКонтакте">ВКонтакте</a></div>
+                                </div>
+                                <div class="customForm__line">
+                                  <div class="customForm__separator"></div>
+                                  <div class="customForm__field _center">
+                                    <label class="customForm__name customForm__name_center">Или заполнив форму ниже:</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.modules/registration.user/portal.module.registration.user.firststep.js"></script>
+                            <div id="emailConfirmationContainer">
+                              <script type="text/javascript">var sendEmailUrl = '/ru/Email/SendRegistrationCode/';</script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/intlTelInput.min.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/utils.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.user/identity/portal.user.identity.email.confirmation.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/designate.default.submit.button.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.plugin.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.countdown.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.timer.js"></script>
+                              <div class="customForm__line">
+                                <div class="customForm__field">
+                                  <div class="customForm__title">
+                                    <label class="customForm__name" for="Address">E-mail:</label>
+                                  </div>
+                                  <div class="customForm__cell">
+                                    <input class="customForm__inp k-textbox input-validation-error" id="Email_Address" data-val="true" data-val-email="Неверный e-mail." data-val-required="Поле «E-mail» обязательно для заполнения." maxlength="48" name="Email.Address" type="text" value="">
+                                  </div>
+                                </div>
+                              </div>
+                              <input id="Email_IsCodeContainerVisible" data-val="true" data-val-required="'IsCodeContainerVisible' обязано быть непустым." name="Email.IsCodeContainerVisible" type="hidden" value="False">
+                              <div class="customForm__line">
+                                <div class="customForm__field">
+                                  <div class="customForm__cell">
+                                    <div class="customForm__errors" id="emailAddressValidationSummary"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div id="smsConfirmationContainer">
+                              <script type="text/javascript">var sendSmsUrl = '/ru/Sms/SendRegistrationCode/';</script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/intlTelInput.min.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/intl-tel-input/utils.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/portal.user/identity/portal.user.identity.sms.confirmation.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/designate.default.submit.button.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.plugin.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/timer/jquery.countdown.js"></script>
+                              <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.timer.js"></script>
+                              <div class="customForm__line">
+                                <div class="customForm__field">
+                                  <div class="customForm__title">
+                                    <label class="customForm__name" for="MobilePhoneNumber">Номер мобильного телефона:</label>
+                                  </div>
+                                  <div class="customForm__cell">
+                                    <link href="https://my.fxopen.com/Content/Themes/Default/css/ltr/intlTelInput.css" rel="stylesheet">
+                                    <script src="https://my.fxopen.com/Content/Themes/Default/Scripts/portal/mvc/mvc.controls/mvc.controls.phone.js"></script>
+                                    <style>
+                                      .iti-flag {
+                                      background-image: url(/Content/Themes/Default/Images/ltr/intl-flags.png);
+                                      }
+                                      .intl-tel-input {
+                                      width: 100%;
+                                      }
+                                    </style>
+                                    <div class="intl-tel-input allow-dropdown separate-dial-code iti-sdc-4">
+                                      <div class="flag-container"></div>
+                                      <input class="customForm__inp k-textbox progressBarElement" id="Sms_MobilePhoneNumberControl" type="tel" autocomplete="off" placeholder="39 123 4567">
+                                    </div>
+                                    <input id="Sms_MobilePhoneNumber" data-contact-method="Phone" data-url="" name="Sms.MobilePhoneNumber" style="visibility:hidden; position:absolute;" type="text" value="">
+                                    <input id="Sms_MobilePhoneNumberControlInitialized" name="Sms_MobilePhoneNumberControlInitialized" type="hidden" value="true">
+                                    <script>
+                                      $(document).ready(function () {
+                                      initializePhoneControl("Sms_MobilePhoneNumber", "", "",
+                                      '[null]', '["US"]', '[]', 'https://ipinfo.io?token=fd300290e7c07c');
+                                      });
+                                    </script>
+                                  </div>
+                                </div>
+                              </div>
+                              <input id="Sms_IsCodeContainerVisible" data-val="true" data-val-required="'IsCodeContainerVisible' обязано быть непустым." name="Sms.IsCodeContainerVisible" type="hidden" value="False">
+                              <div class="customForm__line">
+                                <div class="customForm__field">
+                                  <div class="customForm__cell">
+                                    <div class="customForm__errors"><span class="field-validation-valid" data-valmsg-for="Sms.MobilePhoneNumber" data-valmsg-replace="true"></span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__separator"></div>
+                            <input id="CaptchaEnabled" data-val="true" data-val-required="'CaptchaEnabled' обязано быть непустым." name="CaptchaEnabled" type="hidden" value="True">
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__title">
+                                  <label class="customForm__name" for="CaptchaCode">Код защиты:</label>
+                                </div>
+                                <div class="customForm__cell">
+                                  <input class="k-textbox customForm__inp valid" id="CaptchaCode" autocomplete="off" maxlength="6" name="CaptchaCode" type="text" value="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__cell" style="text-align: center;">
+                                  <div class="customForm__captcha"><img alt="Captcha image" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAyAPoDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD3r7nC/wAPCjpnvgDgdOh/+vR9zhf4eFHTPfAHA6dD/wDXpCfLHHG3hR0z3wBwOg4P/wBeora5huIRJbtuQEqoIKkkdVwcdhxQBL/qxhf4eFHr3wBwOnT/APXSI425QMMcKrDaT3wBwOg4NNiiW3QpGWIBO0MxJOeSBnA6dPSq6Xj/ANoyWYtpFEQ+WQ4CsDzgDj3A9MUALeNJbbZI5AqqdmHcKvOeAMc9gOaWSWSGHzof3yqpwi8buM4UfgPXv+Ms8sVvFmT7gZUUEdSSMADgemD/APXqjrSXH2aNbWOZykmNsUvl8YJxx1A46f0oAcNVWO1ikaGVSziNU24PJ/unHHQA1oE+WCFH3eFHTPfAHA6Dg/8A16hhQ+RCZkUyxqAuR36kAdOg45/rUiSoSyxOCYztC5/HGOB0HB+vvQBFaXJmthJ5bR4JVVYFSe5ABx2GB+NLcwCe3MQd0H8PlttJ74HQdAMf/rqWQrHGwJCqowMnGe5AHA6dDVS6eYW0cNkhk3jYrF9oAxk/XjGPx9DQBNbzExkeVKgj+VPMxl+/AGOwwD9aEn82232vbKoJFKZPcYOPTg1y9xBe6JcRsJZp9jcFTtDA9j3Jzj1Fdajjy1ZAQMDYpGM55wBwOnT/APXQBDbR3EPmCaZZDkCMKm0AYBKgfhwcn+dNv2nhtj9lVmdSFVV4JHUgDgcDH61Fq16dOsmaNC78Iig46n09uAOv86ZoTEaVGPMaQqzKGbILHOSMHvx/OgC/ESIk4IYAABhgnuRjgdOn/wCuqDWlxHeC6lvQI4n+SMLtG3aflHTPbvUCXR1DVJraGaVIrY7QsZC7j6dumCB24qTSL9rhZ7WV1ea2bZnbt3j028DPBFAGjCJI0w0gcjhMLtz3wB06Dg1hm7vNLurwCK4ulWVVjU/KoVuePUjpxU2qahdwuyWMErxwna7KAAcjOB9OOg4waboWozXM00Ms5kaFQEGwICO/HHPBH4UAbYO0DaCMcKp4z3wBwOnQ/wD16jZvs+9i/wAi4VFIx74A4B9j/wDXqlf381rdw21rHvOMN22g9MDgduPxosL2X7VLYzfNLCoKMF2hlIBxjOM9R+FADkWS+RDIstuIZcxqr480YzjHHTp+FXeYix3HaowqkY9yAOM8dP8A9dZ93fXdlP5aQpIGkWOEA7cKcdR354H/AOuqsup3lrqK2hiM3lEI/lqFVlbGCF9R0oA0bVbmOeUyTmWJuYV2BQo67QOMnHf2+tTySmBo0WN2y2wbR079OBjAAB/+vTLhZP3cMONmdrjeVbbgnC4xz0wfr70yON7ELGjSSxLkAMSW9cc9fb/61AFv7nC/w8KOme+AOB06H/69Vb2+j06DzCjuqsEAQep6Y4HTAH/66j1G6nso4Xt4g6+asZDHbw3YDp6evf3p8Wnw20ztFuwSSEbkEk7jgHH4HP8AKgCyrrjCH7owqngnvjHA6dP/ANdO+5wv8PCjpnvgDgdOh/8Ar00KsZOxQCOF4xnvgDgdBwf/AK9MDnc8QBQpwnI+bvgDjt0//XQBTurScSoYJC4E4by2bbhdv3V49h+taP3OF/h4UdM98AcDp0P/ANeoZ1kRf9GA3hgACdu4dSB24HT8am+5wv8ADwo6Z74A4HTof/r0AQmTdBJ9kdGdNyR88bh/DjpxisxbLXlUKupRgAYA8leP0rYAEQ2oAMHCjpnuQBwOnf6+9cxcaZqhuZTHd3SpvO1V3YAzwBz0oA6J1mS5j8t8RKrKUIA3Hg4A47Dg/WpFXyhtX+E4UdM9yMcDp3/+vUdzFvi8oFgoOPlcoSOuFxjsBj8abbt5cRjWOYLCAqGQ8yDGSAO/HHNAEk8yWkRdt21PlUKpJOewUdeOh/8Ar0scimNXTIXGEDAqTnnG047dKjRvOtAU3JlcICCh9cY47DioNSaGCBJJbVp1hcFAAPlPXgcZwOBjP86AElnWe9W0g8qRYGBlRuCP4gFHAyMDFXvucL/Dwo6Z74A4HTof/r1DE9v5ziEp5oUZUcMQecY4HQcVKm9EAbG5eFA4B74A4HTGD9aAGS749nlKzbTgKCFz3xg4HTp/+uori6FlLGq28r72CAovA56Y47dCM9/xtfc4X+HhR0z3wBwOnQ//AF6r3D3EMtutvEHTeVfJxhcE4A4Hpjr3oAZe2EV4sSSFgsMgZFBxuOD8uOB06H/69WflgTCAhUGFGOT3IA4zx0P/ANehHG3KZwPlUEYz3IA4HQcGmkOki7G+VRtCEYz3wOg6dPxoA5jUdQtb6/gPlTPb2kmGAG04PoODkEAfhW7HPb3amQQti2fERkXbnjJ2jjt0NZviK1hEEN3FFv8AKk2kIduc+mB2OOn9Kkna4h8PW21ZLhgVUj5lZwcnGOv939fegCLUl3afLeSIzrvVLdOUKpkYA465wfw+tS6Vdw2WjeZvaVkl8s4zuLM3Tae/PX61nXup3c9q0M1qWSOQcqjRcdgBnqD7dqtaHcOLWe2ETTbG+VypXeSckHJ6jB+lADfDTj7XcJ5rO6DC5XGcnJGDzng9aNJdo9cuo4izlGkUDACgE5x65yCKTw4wju7iMyM7x/KpZcZyckc85yD1pNMUN4hmCMW+zySFRgAAHOQO+evtQB0NujwwIjBBIOyjaGJ5IA6fj9fesLQEBv7mRGdliLLHuAA+Y5I5wd3Bq3q5NrE1wdxdMwwqh25DY9B27Yq5p6Q2enQrFIWXjDsCDIzHJ4OOf5fgaAMe6YnxRGFVn+zyKABtAAZenbnNGpOYfEUDqjv5LIAvCqFbjj8f5U2+TZ4ki+WRhHImANqhQwwMdOc0azGqaxartllEOzOcKACSBjpznH5UALqLE67Zbo3Zrd4wVUgKu48Y6d8flUmqt5Gv2kipI/klMgYAAYkcevb8qi1bYNatJUWSVY2jYKMKACcADoc5Ap3iBB/aNqRHJIIsDaMKBknGO/XHT0oA1biSSHUIxBYGRlG0TMQoAPJA/AVbifMYIGCPlVSMZ7kAcDoOD/8AXqsyxanYFNssaE4UHKMSDnAHHpxUqxPa2iRRSM7RDCmRuX7kenTv/wDXoAdc+THAxlUGOLBAI64+bAHGcYGP/wBdOilR4lkiJKYwmRtz3wAcdhgf/rqpa6j9pkkWG3c26ZVJDwGxyVC8c9R+FWopFkhR1VlGPkV12n1xjgdOh/8Ar0ASEiMhF6jhR69yAOB06GqrWduLpboEq8WQMNtB45GOB09/5VZKqrLgDMfCZ49yAOB04B/+vVDzzNfXNg0MhiVcK3AUjGcDGOeoHpj60AXo5EZA0Lqyj5VwevqoHA4Ax+fvT/ucL/Dwo6Z74A4HTof/AK9U9PgWygNvGZW2E4aQEFyTkgdAenWnJcyi+kthbsEiHyybhhgQDgDj3A+lAE0kSZXOf3ZwgyRnvgDgdBxUnksOFnkVeygLge3Sobm2SeMRMWCowKgHbkg7sAcDsMf/AK6eYJs/Jcsi9lCLgD06UAP+5wv8PCjpnvgDgdOh/wDr1Ws5ZXicuACkjIg2ldwB6AHjoMA1PxEu1MnZwoz174A4HTof/r1DZ3JntxII2jwSqqwIJ9gDjsMD8aAFM0sd0IUt3KKvD5AB77QOMnA/zzSmACZmLll2hViYDbxzwOBnHQ5/rVctcxR3Pn7Qittg8sEErwcYz17Z/wDr1akaSNo1hQMA205bbxjOAOAegA/H3oAjt7OGzkkMIIZicAnrk7iAOB9D/hTriESwtCJHj7LsbaT3wOnYfz96PKWC4efzCMIECnAHHJAHHbvn+tMxaTNFOvlyGIlYW9+6joPb/wDVQBLDGbaCOEOzmNQis55fuR2B4HX/AOvSs6xny1ZQ4HyKTjPsBwPQA/8A16bN5yBRbGPKHG1+NwwTtHb0wee9Z2qRxGwSW+iOIJBtWInJyegxj29elAFq5ubi1khhhtmmJ4LA7VHfAH8qp6nBfx3sNxZb5BH8oi3BFxg8Y79vyq9bX9rM0kVvLuaDClTkfhg4HbA/zkupJYl2xofKAILqeQMZwqjqcDj/APXQBTa2uL1UguIvJgjcNhTjzDgnC4PHP5Y+taM7SQ28ht0DSIuI0JxuPXAHTp0qvJ9p+xxmyfJVdqiXKM3fHIx0Hp6065t5mWHyZQkkJ44xuyDkAdPTH0PvQBDq8LyacI1i3sGUKm/Zk9cDoOOMUmm2U1tpxtp5GJyQMEqxycnHPX3z61YY3kd3GkYQwLwc8Z4zgDjnpjtj8atfc4X+HhR0z3wBwOnQ/wD16AMFtMGnX8c6RT3MSMSijBKseT3Bbvzz+lO02NtONxPdhlLS7Isp1DEEgD68ZNaqQtGqL5z5jJAAON/fGPp05p+V3FAmRGRszjDHrgDgcAYz/wDXoA53VIr+e/3xW1wY4WKRBSIwVI5xjB6/oKNPs9QXULYXBuZI4HJUycKRtPABOc5rpSRHwDjb8qg8Z74A4HTof/r1TjvYpdSktEhfzLYcOcAcjO0DI7cD6UAVNWsC81teQIZWtnGIgQu4dcDjtx+RqNrUanqsc5ilWC3+VFlTZv4JwBwcj+lbn3OF/h4UdM98AcDp0P8A9eo44lgaQx5yzcAnr3wBwOg4/GgDL1bS1aCF7aLc9s5ZIw20vnkge44P4Gs1If31m87XU0dmcl3hYbjkkKB1Jzj24NdOA6SHDDYBtRcYPqQOgPHT/wDXT/ucL/Dwo6Z74A4HTof/AK9ADI5FaNWjyFx8gZSpPfG047dP/wBdJsEUjOGPACKpOAe+AOB04B/+vUn3OF/h4UdM98AcDp0P/wBemsicKUVthwgYde+AOB06H/69AEVvbC0aURuxVnyiHoM8kAcZ+v196aqyyLNHKAqB9sIHBK4BxjgZ4OD/APXqaSRbaJnJwsY4469yAOM8DimW1zFcQCS3YlASqggqSR1XBx0AwKAC5njs4C77tqkKoVSScnoFHt0NNtI4YLdfs4YKeRvBVnJ5PBxzjv8AX3pzxlZ0kWRgIgVEecBs84xx0A45/lSN5c6bYnBMbfJg45HOMcDp0oAmyEO1TyvCr0z3wBwOg4P/ANeo5CtuGcEA8KgY4DHsoHA9ADRN5MS732Ls+VWbg89h0HTAFZ17p8kljZxwMJ2t3BRpH2l+D07Ht+RoAuW8lw4YPH5PlvtTP/LQYzgDgD2+n1q15LDhZ5FXsoC4Ht0quZhBcRxF+duAoXAJyO3H0B/+vVjyWHCzyKvZQFwPbpQBBbfLcbF4XMnA6cFcUp+XU4lXhRA2AOn3loooAlPFxGg4Ty2+UdOCuKzNGkdndWdioeUAE8DDACiigDQnABEYA2eS/wAvbjbjiqduoWGzUABTliAOM7hz9eTRRQBX0dmOoOCxxsfjPowxWrKAHVAMJ5T/AC9uNuKKKAMPwwBJapvG7cHJ3c5O4VoaU7FFUsSA84xn0cYoooAv/duYkXhfLb5R04K1C/y6lbIvCeU/yjp/DRRQBN925iReF8tvlHTgrR925iReF8tvlHTgrRRQBHN8jBV+VRC+AOBxtxWR4ZdjZw5YnKuTk9TuoooAh8YEx2toqEqA5IC8YwOK3YuHtwOAYTkD224oooAk+7cxIvC+W3yjpwVo+7cxIvC+W3yjpwVoooAY5KXVuinau1vlHTjFLJ8kqqvyqInwB0424oooAzPDsskmm2heRmJSTO456MMVq/duYkXhfLb5R04K0UUAIfluI0HCeW3yjp1WjAS4jRBtTY3yjgdVoooAD8txGi8L5bfKOnVaST5JVVflURPgDpxtxRRQByzyyP4QjZpHZgGIJYk5Ei4re0pmNlYcn5rck89T8vP6miigCpGq/wDCTqNowqPjjp92twAKAAAAOAB2oooA/9k="></div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line customForm__line_size_big">
+                              <div class="customForm__field">
+                                <div class="customForm__title"> </div>
+                                <div class="customForm__cell">
+                                  <label class="customForm__wrap">
+                                    <input class="customForm__cbx agreementRequest valid" id="IsTermsConfirmed" data-text="You need to accept FXOpen's &quot;Client Agreement&quot; and &quot;eWallet Terms of Use&quot;." data-val="true" data-val-required="'IsTermsConfirmed' обязано быть непустым." name="IsTermsConfirmed" type="checkbox" value="true"><span class="customForm__cbxCustomize"></span>
+                                    <input name="IsTermsConfirmed" type="hidden" value="false"><span class="customForm__label">Я принимаю условия <a href="https://my.fxopen.com/Settings/AccountDocuments/" target="_blank">Клиентского Соглашения</a> и <a href="https://my.fxopen.com/Download?name=eWallet_Agreement_EN.pdf" target="_blank">Договора об использовании электронного кошелька FXOpen eWallet</a>.</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line customForm__line_size_big">
+                              <div class="customForm__field">
+                                <div class="customForm__title"> </div>
+                                <div class="customForm__cell">
+                                  <label class="customForm__wrap">
+                                    <input class="customForm__cbx agreementRequest valid" id="IsPrivacyConfirmed" data-text="Необходимо подтвердить согласие на обработку ваших персональных данных." data-val="true" data-val-required="'IsPrivacyConfirmed' обязано быть непустым." name="IsPrivacyConfirmed" type="checkbox" value="true"><span class="customForm__cbxCustomize"></span>
+                                    <input name="IsPrivacyConfirmed" type="hidden" value="false"><span class="customForm__label">Я соглашаюсь на обработку моих персональных данных согласно <a href="https://www.fxopen.ru/ru/konfidentsialnost" target="_blank">Политике конфиденциальности</a> компании FXOpen.</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__cell">
+                                  <div class="customForm__errors">
+                                    <div class="validation-summary-errors" data-valmsg-summary="true"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__cell" style="text-align: center;">
+                                  <button class="b-btn customForm__btn _color--second" type="submit" onclick="return onClick_submitButton()">Далее</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="customForm__line">
+                              <div class="customForm__field">
+                                <div class="customForm__cell" style="text-align: center;"><a class="pText2 pText2-t3 pLink" onclick="openNewWindow('https://fxopen.support/visitor/index.php?/Default/LiveChat/Chat/Request/_sessionID=/_promptType=chat/_proactive=0/_filterDepartmentID=/_languageID=1/_randomNumber=' + Math.random(), 600, 680);return false;" href="###">Вопросы? Online чат! </a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <input name="__RequestVerificationToken" type="hidden" value="nJTTcMRF-UG0QY-P0JuD_hhZBks-WhUehPromn5lqfwNolTyLX9hmODGZQOirP0f5Yu-SkZSWJdy8gq5V1xlmaDz2l81">
+                      </form>
+                      <script>
+                        $(document).ready(function () {try {_gaq.push(['_trackPageview', 'registration']);} catch (e) {console.log(e);}});
+                        
+                      </script>
+                    </div>
+                  </section>
+                </div>
+              </div>
+              <div class="logo footer__logo"><a class="logo__link" href="#"><img class="logo__image" src="img/logos/logo1.svg" alt=""></a></div>
+              <p class="footer__text">Трейдинг на финансовых рынках связан с существенными рисками, включая риск полной потери средств и другие затраты. Клиент должен самостоятельно и осознанно решить,<br> подходит ли ему этот вид деятельности, учитывая свои финансовые возможности, опыт в сфере инвестиций, склонность к риску и другие факторы. Любая информация, размещенная<br> на данном сайте, является рекомендацией общего характера.</p><span class="copy">© Все права защищены! 2018г.</span>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

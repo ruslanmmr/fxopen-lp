@@ -1,0 +1,34 @@
+.home
+  .home__background
+    //фильтр если нужен, если нет - просто удалить
+    span.home__filter
+    //
+    .home__poster.lazy(data-src='img/backgrounds/video-poster.jpeg')
+    .element-with-video-bg.jquery-background-video-wrapper
+  .container
+    .home__container
+      .home__text
+        h1.home__title Торговать нефтью легко<span class="italic">!</span>
+        span.home__subtitle Зарабатывать на торговле энергоносителях может каждый
+      .home-form
+        .home-form__head
+          .logo
+            a(href="#").logo__link
+              img(src="img/logos/logo1.svg", alt="").logo__image
+        form(action="").home-form__form
+          .home-form__container
+            .home-form__group
+              span.home-form__label Имя
+              input(type="text" required).input.home-form__input
+            .home-form__group
+              span.home-form__label Телефон
+              input(type="text" required).input.home-form__input
+            .home-form__group
+              span.home-form__label E-mail
+              input(type="email" required).input.home-form__input
+            .home-form__group
+              .checkbox
+                input(type="checkbox" id="personalData").checkbox__input
+                label(for="personalData").checkbox__label Я соглашаюсь на обработку моих персональных данных согласно <a href='#'>Политике конфиденциальности</a> компании FXOpen.
+          .home-form__container
+            button(type='submit').button.button_style1 15 000$ на демо-счет

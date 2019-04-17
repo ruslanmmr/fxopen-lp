@@ -1,0 +1,108 @@
+.trades {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(239, 122, 44, 0.8);
+  }
+  &__title {
+    padding: 55px 0;
+  }
+  &__container {
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.34);
+    border-radius: 5px;
+    padding: 35px 90px 40px 90px;
+  }
+  &__chart {
+    height: 430px;
+  }
+}
+
+.trades-stock {
+  padding: 50px 0;
+  text-align: center;
+  &__info {
+    color: #313131;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 35px 0 35px 0;
+    margin: -20px 0;
+  }
+}
+.trades-stock-block {
+  width: 25%;
+  padding: 20px;
+  &__container {
+    margin: 0 auto;
+    width: 185px;
+    border-radius: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #f59336;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  &__content {
+    padding: 25px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__icon {
+    height: 50px;
+    width: auto;
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__text {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+@media all and(max-width: 992px) {
+  .trades-stock-block {
+    width: 50%;
+  }
+}
+@media all and(max-width: 480px) {
+  .trades-stock__container {
+    margin: -10px;
+  }
+  .trades-stock-block__content {
+    padding: 10px;
+    justify-content: center;
+  }
+  .trades-stock-block__icon {
+    margin-bottom: 5px;
+    height: 40px;
+  }
+  .trades-stock-block {
+    padding: 10px;
+    &__container {
+      width: 100%;
+      border-radius: 4px;
+    }
+  }
+}
