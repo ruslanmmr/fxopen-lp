@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 30px;
   }
   &__title {
     font-size: 60px;
@@ -98,6 +99,33 @@
   }
   &__image {
     display: block;
+    width: 100%;
+  }
+}
+
+@media all and(max-width: 1200px) {
+  .home__title {
+    font-size: 50px;
+  }
+}
+@media all and(max-width: 768px) {
+  .home__container {
+    display: block;
+    height: auto;
+    padding: 60px 0 50px 0;
+  }
+  .home__text {
+    padding: 0 0 50px 0;
+  }
+}
+@media all and(max-width: 576px) {
+  .home__text {
+    text-align: center;
+  }
+  .home__title {
+    font-size: 38px;
+  }
+  .home-form {
     width: 100%;
   }
 }

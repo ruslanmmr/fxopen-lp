@@ -1,5 +1,14 @@
 .trades {
   position: relative;
+  padding-bottom: 160px;
+  &__background-top {
+    height: 50%;
+  }
+  &__background-bottom {
+    bottom: 0;
+    height: 50%;
+    top: auto;
+  }
   &:before {
     content: '';
     display: block;
@@ -8,7 +17,7 @@
     left: 0;
     width: 100%;
     height: 50%;
-    background-color: rgba(239, 122, 44, 0.8);
+    background-color: #fba73d;
   }
   &__title {
     padding: 55px 0;
@@ -20,7 +29,7 @@
     padding: 35px 90px 40px 90px;
   }
   &__chart {
-    height: 430px;
+    height: 900px;
   }
 }
 
@@ -29,6 +38,8 @@
   text-align: center;
   &__info {
     color: #313131;
+    text-decoration: underline;
+    font-size: 14px;
     &:hover {
       text-decoration: none;
     }

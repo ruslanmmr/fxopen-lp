@@ -5,6 +5,12 @@
   line-height: 1.2em;
   position: relative;
   overflow: hidden;
+  margin-top: -160px;
+  &__background {
+    height: calc(100% - 160px);
+    top: auto;
+    bottom: 0;
+  }
   &:before {
     content: '';
     display: block;
@@ -12,7 +18,7 @@
     width: 100%;
     height: calc(100% - 160px);
     bottom: 0;
-    background-color: rgba(239,122,44,.8);
+    background-color: #fba73d;
   }
   &__logo {
     width: 154px;
