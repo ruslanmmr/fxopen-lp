@@ -1,3 +1,24 @@
+mixin info()
+  .trades-info
+    .trades-info__container
+      .trades-info__block.trades-info__block_currency
+        .trades-info__icon
+          img(src="img/icons/oil.png", alt="")
+        .trades-info__section
+          span.trades-info__section-title.trades-info__section-title_increase XBRUSD (BUY)
+          span.trades-info__section-label Пример сделки нашего трейдера
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title 65.34
+          span.trades-info__section-label Цена открытия:
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title 66.18
+          span.trades-info__section-label Цена закрытия:
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title.trades-info__section-title_resault +96%
+          span.trades-info__section-label Результат:
 .trades
   .trades__background-top.background.lazy(data-src='img/backgrounds/bg_2.jpg')
   .trades__background-bottom.background.lazy(data-src='img/backgrounds/bg_3.jpg')
@@ -41,39 +62,32 @@
               .trades-slide__info
                 span.trades-slide__name Надежда<br> Провоторова
                 span.trades-slide__adress EW•••64427••••
-      .trades-info
-        .trades-info__container
-          .trades-info__block.trades-info__block_currency
-            .trades-info__icon
-              img(src="img/icons/oil.png", alt="")
-            .trades-info__section
-              span.trades-info__section-title.trades-info__section-title_increase XBRUSD (BUY)
-              span.trades-info__section-label Пример сделки нашего трейдера
-          .trades-info__block.trades-info__block_values
-            .trades-info__section
-              span.trades-info__section-title 65.34
-              span.trades-info__section-label Цена открытия:
-          .trades-info__block.trades-info__block_values
-            .trades-info__section
-              span.trades-info__section-title 66.18
-              span.trades-info__section-label Цена закрытия:
-          .trades-info__block.trades-info__block_values
-            .trades-info__section
-              span.trades-info__section-title.trades-info__section-title_resault +96%
-              span.trades-info__section-label Результат:
       .trades__chart
-        .trades__chart-container
-          .trades__chart-tab(id="tab1")
+        .trades__chart-tab(id="tab1")
+          +info()
+          .trades__chart-container
             span график 1
-          .trades__chart-tab(id="tab2")
+          span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+        .trades__chart-tab(id="tab2")
+          +info()
+          .trades__chart-container
             span график 2
-          .trades__chart-tab(id="tab3")
+          span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+        .trades__chart-tab(id="tab3")
+          +info()
+          .trades__chart-container
             span график 3
-          .trades__chart-tab(id="tab4")
+          span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+        .trades__chart-tab(id="tab4")
+          +info()
+          .trades__chart-container
             span график 4
-          .trades__chart-tab(id="tab5")
+          span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+        .trades__chart-tab(id="tab5")
+          +info()
+          .trades__chart-container
             span график 5
-        span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+          span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
       .trades-repeat
         .trades-repeat__container
           h4.title.trades-repeat__title Повтори успех<span class="italic">!</span>
