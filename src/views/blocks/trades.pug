@@ -4,7 +4,73 @@
   .container
     h4.title.trades__title Случайные сделки с нефтью от клиентов FXopen
     .trades__container
+      .trades__traders
+        .trades-slider
+          .trades-slide.trades-slide_active
+            .trades-slide__container
+              .trades-slide__image
+                img(data-src="img/photo1.jpg", alt="").lazy
+              .trades-slide__info
+                span.trades-slide__name Филипп<br> Филипенко
+                span.trades-slide__adress EW•••47639••••
+          .trades-slide
+            .trades-slide__container
+              .trades-slide__image
+                img(data-src="img/photo2.jpg", alt="").lazy
+              .trades-slide__info
+                span.trades-slide__name Катя<br> Фитисова
+                span.trades-slide__adress EW•••27541••••
+          .trades-slide
+            .trades-slide__container
+              .trades-slide__image
+                img(data-src="img/photo3.jpg", alt="").lazy
+              .trades-slide__info
+                span.trades-slide__name Костя<br> Астраханский
+                span.trades-slide__adress EW•••82197••••
+          .trades-slide
+            .trades-slide__container
+              .trades-slide__image
+                img(data-src="img/photo4.jpg", alt="").lazy
+              .trades-slide__info
+                span.trades-slide__name Саша<br> Лукашенко
+                span.trades-slide__adress EW•••88395••••
+          .trades-slide
+            .trades-slide__container
+              .trades-slide__image
+                img(data-src="img/photo5.jpg", alt="").lazy
+              .trades-slide__info
+                span.trades-slide__name Надежда<br> Провоторова
+                span.trades-slide__adress EW•••64427••••
+      .trades-info
+        .trades-info__container
+          .trades-info__block.trades-info__block_currency
+            .trades-info__icon
+              img(src="img/icons/oil.png", alt="")
+            .trades-info__section
+              span.trades-info__section-title.trades-info__section-title_increase XBRUSD (BUY)
+              span.trades-info__section-label Пример сделки нашего трейдера
+          .trades-info__block.trades-info__block_values
+            .trades-info__section
+              span.trades-info__section-title 65.34
+              span.trades-info__section-label Цена открытия:
+          .trades-info__block.trades-info__block_values
+            .trades-info__section
+              span.trades-info__section-title 66.18
+              span.trades-info__section-label Цена закрытия:
+          .trades-info__block.trades-info__block_values
+            .trades-info__section
+              span.trades-info__section-title.trades-info__section-title_resault +96%
+              span.trades-info__section-label Результат:
       .trades__chart
+        .trades__chart-container
+        span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
+      .trades-repeat
+        .trades-repeat__container
+          h4.title.trades-repeat__title Повтори успех<span class="italic">!</span>
+          form(action="").trades-form
+            .trades-form__group
+              span.trades-form__label Плечо:
+              select(type="text").trades-form__input
     .trades-stock
       h4.title Акция +200% на все пополнения<span class="italic">!</span>
       .trades-stock__container

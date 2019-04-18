@@ -9,6 +9,28 @@
     height: 50%;
     top: auto;
   }
+  &__chart-container {
+    height: 430px;
+  }
+  &__chart {
+    padding-bottom: 35px;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: calc(100% + 180px);
+      background-color: #d9d9d9;
+      height: 2px;
+      position: absolute;
+      left: -90px;
+      bottom: 0;
+    }
+  }
+  &__chart-label {
+    display: block;
+    font-size: 15px;
+    padding: 25px 0 0 0;
+  }
   &:before {
     content: '';
     display: block;
@@ -28,8 +50,14 @@
     border-radius: 5px;
     padding: 35px 90px 40px 90px;
   }
-  &__chart {
-    height: 900px;
+}
+.trades-slider {
+  display: flex;
+  .slick-track {
+    display: flex;
+  }
+  .slick-list {
+    width: 100%;
   }
 }
 
@@ -91,10 +119,197 @@
     font-size: 14px;
   }
 }
-
+.trades-slide {
+  cursor: pointer;
+  &__container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #cdcdcd;
+  }
+  &__image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    border: 3px solid #cdcdcd;
+    width: 63px;
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+    img {
+      display: block;
+      width: 105%;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: grayscale(100%);
+    }
+  }
+  &__info {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+  &__name {
+    color: #999999;
+    display: block;
+    line-height: 1;
+  }
+  &__adress {
+    color: #c1c1c1;
+  }
+  &_active,
+  &:hover {
+    &:after {
+      background-color: #ef7a2c;
+    }
+    .trades-slide {
+      &__image {
+        border-color: #ef7a2c;
+        img {
+          filter: grayscale(0);
+        }
+      }
+      &__name,
+      &__adress {
+        color: #000;
+      }
+    }
+  }
+}
+.trades-info {
+  padding: 35px 0 15px 0;
+  &__container {
+    display: flex;
+    margin: 0 -15px;
+  }
+  &__icon {
+    width: 65px;
+    height: 65px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin-top: -20px;
+    flex-shrink: 0;
+  }
+  &__block {
+    display: flex;
+    padding: 15px;
+    position: relative;
+    &_currency {
+      flex: 1 1 40%;
+    }
+    &_values {
+      flex: 1 1 20%;
+    }
+    &:not(:last-child) {
+      &:after {
+        content: '';
+        display: block;
+        width: 1px;
+        height: calc(100% - 30px);
+        background-color: #ebebeb;
+        position: absolute;
+        right: 0;
+        top: 15px;
+      }
+    }
+  }
+  &__section-title {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    color: #444444;
+    line-height: 30px;
+    padding-bottom: 12px;
+    white-space: nowrap;
+    &_resault {
+      color: #33cc66;
+    }
+    &_increase {
+      display: flex;
+      &:after {
+        content: '';
+        display: block;
+        height: 1em;
+        width: 1em;
+        margin-left: 15px;
+        background: url('../img/icons/ico-up.png');
+        background-size: 100% 100%;
+        flex-shrink: 0;
+      }
+    }
+  }
+  &__section-label {
+    font-size: 12px;
+    display: block;
+    color: #999999;
+    line-height: 1.2;
+  }
+}
+.trades-repeat {
+  &__container {
+    padding: 45px 0 25px 0;
+    position: relative;
+  }
+}
 @media all and(max-width: 992px) {
   .trades-stock-block {
     width: 50%;
+  }
+  .trades-info__container {
+    flex-wrap: wrap;
+  }
+  .trades-info__block_currency {
+    flex: 1 1 100%;
+  }
+  .trades-info__block:first-child:after {
+    display: none;
+  }
+}
+@media all and(max-width: 576px) {
+  .trades__chart:after {
+    width: calc(100% + 40px);
+    left: -20px;
+  }
+  .trades__container {
+    padding: 35px 20px 40px 20px;
+  }
+  .trades-info__container {
+    margin: 0 -10px;
+  }
+  .trades-info__section-title_increase {
+    white-space: normal;
+  }
+  .trades-info__block_values {
+    flex: 1 1 33.33%;
+  }
+  .trades-info__block {
+    padding: 10px;
+  }
+  .trades-info__icon {
+    width: 50px;
+    height: 50px;
+    margin-top: -13px;
+  }
+  .trades-info__block_currency {
+    flex: 1 1 100%;
+  }
+  .trades-info__section-title {
+    font-size: 28px;
   }
 }
 @media all and(max-width: 480px) {
