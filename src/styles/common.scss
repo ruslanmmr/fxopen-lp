@@ -48,6 +48,8 @@ a {
   outline: none;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
+  text-decoration: none;
   &_style1 {
     background-color: #ff6600;
     border-radius: 5px;
@@ -76,6 +78,7 @@ a {
     position: relative;
     padding-left: 40px;
     cursor: pointer;
+    font-weight: 300;
     a {
       color: #ff6600;
       &:hover {
@@ -180,7 +183,6 @@ a {
     }
   }
 }
-
 @media all and(max-width: 992px) {
 }
 @media all and(max-width: 576px) {

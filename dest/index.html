@@ -161,11 +161,33 @@
                   <div class="trades-repeat__container">
                     <h4 class="title trades-repeat__title">Повтори успех<span class="italic">!</span></h4>
                     <form class="trades-form" action="">
-                      <div class="trades-form__group"><span class="trades-form__label">Плечо:</span>
-                        <select class="trades-form__input" type="text"></select>
+                      <div class="trades-form__group trades-form__group_style1"><span class="trades-form__label">Плечо:</span>
+                        <select class="trades-form__input" type="text">
+                          <option value="">1:10</option>
+                          <option value="">1:50</option>
+                          <option value="">1:100</option>
+                          <option value="">1:1000</option>
+                        </select>
+                      </div>
+                      <div class="trades-form__group trades-form__group_style1"><span class="trades-form__label">Используемые средства:</span>
+                        <input class="trades-form__input usd-input" type="text" value="10 $">
+                      </div>
+                      <div class="trades-form__group"><span class="trades-form__label">Результат:</span>
+                        <input class="trades-form__input usd-input trades-form__input_resault" id="test" type="text" value="1096$" disabled>
+                      </div>
+                      <div class="trades-form__group"><span class="trades-form__label">Доходность:</span>
+                        <input class="trades-form__input usd-input trades-form__input_income" type="text" value="1005$" disabled>
+                      </div>
+                      <div class="trades-form__group trades-form__group_checkbox">
+                        <div class="checkbox trades-form__checkbox">
+                          <input class="checkbox__input" type="checkbox" id="dd">
+                          <label class="checkbox__label" for="dd">При условии участия в акции: +200% на пополнение</label>
+                        </div>
                       </div>
                     </form>
                   </div>
+                  <div class="trades-repeat__post-text"> <span>Данная информация носит образовательный характер и не дает гарантии на доход в будущем</span></div>
+                  <div class="trades-repeat__button"><a class="button button_style1" href="#">Начать торговать</a></div>
                 </div>
               </div>
               <div class="trades-stock">
