@@ -10,7 +10,8 @@
     margin: 0;
     padding: 14px 0;
     display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    left: 100%;
   }
   &__item {
     padding: 0 15px;
@@ -23,6 +24,7 @@
     outline: none;
     padding-left: 8px;
     display: block;
+    white-space: nowrap;
     span {
       color: #ff9933;
       display: inline-block;
@@ -41,3 +43,14 @@
     }
   }
 }
+
+/* liScroll styles */
+
+.tickercontainer {
+  width: 100%;
+  }
+  .tickercontainer .mask { /* that serves as a mask. so you get a sort of padding both left and right */
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  }

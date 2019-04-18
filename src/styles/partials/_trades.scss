@@ -26,6 +26,11 @@
       bottom: 0;
     }
   }
+  &__chart-tab {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
   &__chart-label {
     display: block;
     font-size: 15px;
@@ -124,6 +129,7 @@
     display: flex;
     align-items: center;
     padding-bottom: 25px;
+    outline: none;
   }
   &:after {
     content: '';
@@ -166,10 +172,9 @@
   &__adress {
     color: #c1c1c1;
   }
-  &_active,
-  &:hover {
+  &_active {
     &:after {
-      background-color: #ef7a2c;
+      background-color: #ef7a2c !important;
     }
     .trades-slide {
       &__image {
@@ -182,6 +187,11 @@
       &__adress {
         color: #000;
       }
+    }
+  }
+  &:hover {
+    &:after {
+      background-color: #fdaf7a;
     }
   }
 }

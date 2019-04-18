@@ -7,35 +7,35 @@
       .trades__traders
         .trades-slider
           .trades-slide.trades-slide_active
-            .trades-slide__container
+            a(href="#tab1").trades-slide__container
               .trades-slide__image
                 img(data-src="img/photo1.jpg", alt="").lazy
               .trades-slide__info
                 span.trades-slide__name Филипп<br> Филипенко
                 span.trades-slide__adress EW•••47639••••
           .trades-slide
-            .trades-slide__container
+            a(href="#tab2").trades-slide__container
               .trades-slide__image
                 img(data-src="img/photo2.jpg", alt="").lazy
               .trades-slide__info
                 span.trades-slide__name Катя<br> Фитисова
                 span.trades-slide__adress EW•••27541••••
           .trades-slide
-            .trades-slide__container
+            a(href="#tab3").trades-slide__container
               .trades-slide__image
                 img(data-src="img/photo3.jpg", alt="").lazy
               .trades-slide__info
                 span.trades-slide__name Костя<br> Астраханский
                 span.trades-slide__adress EW•••82197••••
           .trades-slide
-            .trades-slide__container
+            a(href="#tab4").trades-slide__container
               .trades-slide__image
                 img(data-src="img/photo4.jpg", alt="").lazy
               .trades-slide__info
                 span.trades-slide__name Саша<br> Лукашенко
                 span.trades-slide__adress EW•••88395••••
           .trades-slide
-            .trades-slide__container
+            a(href="#tab5").trades-slide__container
               .trades-slide__image
                 img(data-src="img/photo5.jpg", alt="").lazy
               .trades-slide__info
@@ -63,6 +63,16 @@
               span.trades-info__section-label Результат:
       .trades__chart
         .trades__chart-container
+          .trades__chart-tab(id="tab1")
+            span график 1
+          .trades__chart-tab(id="tab2")
+            span график 2
+          .trades__chart-tab(id="tab3")
+            span график 3
+          .trades__chart-tab(id="tab4")
+            span график 4
+          .trades__chart-tab(id="tab5")
+            span график 5
         span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
       .trades-repeat
         .trades-repeat__container
