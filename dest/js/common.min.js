@@ -8,7 +8,9 @@ $(document).ready(function () {
 //загрузка видео после загрузки всей страницы
 window.addEventListener('load', 
     function() { 
+     setTimeout(function() {
       backgroundVideo();
+     }, 1500)
   }, false);
 
 $(window).resize(function () {
