@@ -21,32 +21,7 @@ videoLoaded;
 
 //inputs
 function inputs() {
-
   $('select').selectric();
-
-  function addRub (val) {
-    return val + " $";
-  }
-  
-  function removeUsd (val) {
-    val = val.replace(" $", "");
-      val = val.replace("$", "");
-      val = val.replace(" ", "");
-      return val;
-  }
-  $('.usd-input').bind("change keyup input click", function() {
-    if (this.value.match(/[^0-9]/g)) {
-    this.value = this.value.replace(/[^0-9 $]/g, '');
-    }
-  });
-  
-  $(".usd-input").on("input", function () {
-    var $this = $(this);
-      var val = $this.prop("value");
-      var newVal = removeUsd(val);
-      newVal = addRub(newVal);
-      $this.prop("value", newVal);
-  });
 }
 //lazy
 function lazy() {
