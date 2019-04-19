@@ -71,3 +71,9 @@
     transform: translate(-50%,86%);
   }
 }
+
+@media all and(max-width: 1200px) {
+  .relevance__container:before {
+    display: none;
+  }
+}

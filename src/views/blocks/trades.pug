@@ -19,6 +19,27 @@ mixin info()
         .trades-info__section
           span.trades-info__section-title.trades-info__section-title_resault +96%
           span.trades-info__section-label Результат:
+mixin info2()
+  .trades-info
+    .trades-info__container
+      .trades-info__block.trades-info__block_currency
+        .trades-info__icon
+          img(src="img/icons/oil.png", alt="")
+        .trades-info__section
+          span.trades-info__section-title.trades-info__section-title_increase.trades-info__section-title_sell XBRUSD (BUY)
+          span.trades-info__section-label Пример сделки нашего трейдера
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title 65.34
+          span.trades-info__section-label Цена открытия:
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title 66.18
+          span.trades-info__section-label Цена закрытия:
+      .trades-info__block.trades-info__block_values
+        .trades-info__section
+          span.trades-info__section-title.trades-info__section-title_resault +96%
+          span.trades-info__section-label Результат:
 .trades
   .trades__background-top.background.lazy(data-src='img/backgrounds/bg_2.jpg')
   .trades__background-bottom.background.lazy(data-src='img/backgrounds/bg_3.jpg')
@@ -69,7 +90,7 @@ mixin info()
             span график 1
           span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
         .trades__chart-tab(id="tab2")
-          +info()
+          +info2()
           .trades__chart-container
             span график 2
           span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
@@ -79,7 +100,7 @@ mixin info()
             span график 3
           span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
         .trades__chart-tab(id="tab4")
-          +info()
+          +info2()
           .trades__chart-container
             span график 4
           span.trades__chart-label 13.02 2019 была открыта позиция BUY по инструменту XBRUSD. 18.02.2019 позиция была закрыта. Разница в катировках 96%
